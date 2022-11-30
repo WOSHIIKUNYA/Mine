@@ -9,7 +9,6 @@ import (
 
 func register(m *gin.Context) {
 	Name := m.PostForm("Name")
-	m.String(200, Name)
 	Password := m.PostForm("Password")
 	if Name == "" {
 		m.String(200, "傻逼你账号都没输入")
